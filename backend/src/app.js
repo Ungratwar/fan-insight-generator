@@ -10,14 +10,16 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// API Routes
+// API routes
 app.use("/api", analyzeRoutes);
 
 // Serve React build
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "../../my-react-app/build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(
+    path.join(__dirname, "../../my-react-app/build", "index.html")
+  );
 });
 
 module.exports = app;

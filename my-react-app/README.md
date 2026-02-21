@@ -123,7 +123,7 @@ Follow these steps to run the project locally:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone <repository-url>
+gh repo clone Ungratwar/fan-insight-generator
 cd my-react-app
 ```
 

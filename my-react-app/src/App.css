@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../src/public/assets/pngtree-a-red-cricket-ball-rests-on-lush-green-grass-at-sunrise-image_20056817.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #111827;
+  padding: 16px 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-family: 'Oswald', sans-serif;
+  color: #FACC15;
+}
+
+.nav-link {
+  color: #E5E7EB;
+  text-decoration: none;
+  margin-left: 25px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #2563EB;
+}
+
+.nav-link.active {
+  color: #FACC15;
+}
+
+/* PAGE */
+.page-container {
+  max-width: 750px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* GLASS CARD */
+.glass-card {
+  background: #1E293B;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* HEADINGS */
+.main-heading {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #FACC15;
+  margin-bottom: 30px;
+}
+
+/* INPUT */
+.scenario-textarea {
+  width: 100%;
+  height: 110px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #334155;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #2563EB;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.generate-btn:hover {
+  background: #1D4ED8;
+}
+
+/* OUTPUT CARD */
+.output-card {
+  margin-top: 25px;
+  padding: 25px;
+  background: #1E293B; /* Dark card */
+  border-radius: 12px;
+  color: #ffffff; /* Ensure text visible */
+}
+
+.analysis-title {
+  color: #FACC15;
+}
+
+.analysis-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* HIGHLIGHT */
+.highlight {
+  color: #F97316;
+  font-weight: bold;
+}
+
+/* PROBABILITY */
+.prob-team {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.prob-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FACC15;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #334155;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Separate Colors */
+.chasing-bar {
+  background: #ff4d4d;
+}
+
+.defending-bar {
+  background: #4caf50;
+}
+
+/* HISTORY */
+.history-card {
+  background: #1E293B;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+}
+
+.history-prob {
+  color: #FACC15;
+  font-weight: bold;
+}
+
+
+.loader-section {
+  margin-top: 20px;
+  text-align: center;
+  color: #FACC15;
+}
+
+.spinner {
+  margin: 0 auto 10px auto;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255,255,255,0.2);
+  border-top: 4px solid #FACC15;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.output-card {
+  margin-top: 25px;
+  padding: 25px;
+  background: #1E293B;
+  border-radius: 12px;
+  color: white;
+}
+
+.analysis-title {
+  color: #FACC15;
+}
+
+.analysis-text {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.prob-label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.prob-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FACC15;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #334155;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563EB, #F97316);
+  transition: width 0.3s ease-in-out;
+}
+.highlight {
+  color: #F97316;   /* Orange */
+  font-weight: bold;
+}

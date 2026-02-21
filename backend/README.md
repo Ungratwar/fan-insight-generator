@@ -134,6 +134,7 @@ backend/
 ### 1️⃣ Navigate to Backend Folder
 
 ```bash
+gh repo clone Ungratwar/fan-insight-generator
 cd backend
 ```
 
